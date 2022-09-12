@@ -1,0 +1,879 @@
+@import "global.scss";
+
+#header-section {
+  margin-top: 200px;
+  padding: 80px 0 40px;
+  position: relative;
+}
+
+#header-title {
+  /* UI Properties */
+  margin: auto;
+}
+
+#header-description {
+  /* UI Properties */
+  text-align: center;
+  font: normal normal normal 30px/38px Sofia Pro Soft;
+  letter-spacing: -1.5px;
+  color: #222221;
+}
+
+#header-center-btn {
+  display: flex;
+  margin: auto;
+}
+
+.header-mint-now-btn {
+  display: block;
+  margin: 0 auto;
+  width: 309px;
+  height: 86px;
+  background: #fed963 0 0 no-repeat padding-box;
+  border: 2px solid #222221;
+  color: #222221;
+  border-radius: 44px;
+  font-family: "Sofia Pro Soft", serif;
+  font-weight: bold;
+}
+
+.header-mint-now-btn:hover {
+  background: #f6d054 0 0 no-repeat padding-box;
+}
+
+.header-icons {
+  height: 36px;
+  width: 36px;
+  margin: 5px;
+  color: #222221;
+  cursor: pointer;
+}
+
+#about-us-cloud {
+  background-color: #ffffff;
+  padding-bottom: 9rem;
+  padding-top: 9rem;
+}
+
+#about-us-text-div {
+  width: 50%;
+  margin: auto;
+}
+
+#about-us-title {
+  /* UI Properties */
+  text-align: center;
+  letter-spacing: -3.6px;
+  color: #222221;
+}
+
+#about-us-description {
+  /* UI Properties */
+  text-align: center;
+  letter-spacing: 0;
+  color: #222221;
+  margin-bottom: 0;
+}
+
+.mindmap-image {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.roadmap {
+  position: relative;
+
+  h1 {
+    color: #222221 !important;
+    font-weight: bold;
+    font-size: 3.6rem;
+    letter-spacing: -3.6px;
+    margin: 16px 36px;
+  }
+  p {
+    color: #222221 !important;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 36px;
+  }
+  .card-content {
+    align-self: center;
+  }
+  .card {
+    margin-top: 24px;
+  }
+  .mindmap-col {
+    padding-right: 12px;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 38px;
+      margin: 0 0 16px 0;
+      letter-spacing: -2px;
+    }
+    p {
+      margin: 0;
+      letter-spacing: -0.45px;
+    }
+    .card-content {
+      padding: 0;
+    }
+    .row {
+      margin: 0;
+    }
+    .card {
+      padding: 56px 45px;
+    }
+    :last-child {
+      flex: auto;
+    }
+  }
+}
+
+.cloud-right {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+.cloud-left {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+}
+.cloud-top-right {
+  position: absolute;
+  right: 0;
+}
+
+.cloud-top-left {
+  position: absolute;
+}
+
+.faqs {
+  .title {
+    font: normal normal bold 72px/97px Sofia Pro Soft;
+    margin-top: 72px;
+    margin-bottom: 40px;
+    color: #222221;
+    letter-spacing: -3.6px;
+    text-align: center;
+  }
+
+  .container {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    margin: 8px 0;
+  }
+
+  .question {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 20px 80px 20px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .question::after {
+    content: "\002B";
+    font-size: 3.5rem;
+    position: absolute;
+    right: 20px;
+    top: -13px;
+    transition: 0.2s;
+    padding-bottom: 12px;
+  }
+
+  .question.active::after {
+    transform: rotate(45deg);
+  }
+
+  .answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .answer {
+    padding: 0 20px 20px;
+    line-height: 1.5rem;
+    white-space: pre-line;
+  }
+}
+
+.cloud-circle {
+  opacity: 1;
+  fill: #ffffff;
+}
+
+.sep-bottom {
+  transform: translateY(0%) translateY(-2px) scale(-1, -1);
+}
+
+.remove-margin {
+  margin: 0 -15px;
+}
+
+.cloud-top {
+  width: calc(100% + 30px);
+  object-fit: cover;
+  height: 240px;
+}
+
+.team {
+  #team-title {
+    font: normal normal bold 72px/97px Sofia Pro Soft;
+    padding-top: 52px;
+    margin-bottom: 40px;
+    color: #222221;
+    letter-spacing: -3.6px;
+    text-align: center;
+  }
+
+  p {
+    color: white;
+    font: normal normal normal 18px/24px Sofia Pro Soft;
+    letter-spacing: -0.45px;
+  }
+
+  h2 {
+    font-weight: bold;
+    color: white;
+  }
+
+  h3 {
+    text-align: left;
+    font: normal normal bold 18px/24px Sofia Pro Soft;
+    letter-spacing: 1.8px;
+    margin-bottom: 20px;
+  }
+
+  .tyler {
+    color: #81c5ff;
+  }
+  .jack {
+    color: #fed963;
+  }
+  .sam {
+    color: #998bf2;
+  }
+  .josh {
+    color: #8df1b3;
+  }
+  margin: 0 140px 30px 140px;
+
+  .team-socials {
+    margin: auto 30px 15px;
+  }
+
+  svg {
+    height: 30px;
+    //width: 30px;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.team-section-container {
+  position: relative;
+}
+
+.team-section {
+  background-color: #ffffff;
+  padding-bottom: 118px;
+}
+
+.team-col {
+  display: flex;
+  flex-direction: column;
+  background-color: #222221;
+  border-radius: 16px 16px 16px 16px;
+  padding: 3px 3px 15px 3px;
+  height: calc(100% - 20px);
+}
+
+.team-img {
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+}
+
+.team-txt {
+  margin: 30px 30px 0 30px;
+}
+
+.navbar-section.navbar-initial {
+  padding-top: 32px;
+  width: 100%;
+}
+
+.navbar-section.navbar-after-movement {
+  width: 100%;
+}
+
+.navbar-pc {
+  background-color: white;
+  position: fixed;
+  z-index: 25;
+  margin: auto;
+  width: 100%;
+  height: 75px;
+  transition: background-color 0.3s ease, top 0.5s;
+}
+
+.navbar-pc.navbar-transparent {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease, top 0.5s;
+}
+
+#navbar-pc-ul {
+  margin: auto;
+  width: 50%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-pc-ul-element {
+  z-index: 10;
+  flex: auto;
+  text-align: center;
+  font: normal normal bold 24px/32px Sofia Pro Soft;
+  color: #222221;
+  a {
+    cursor: pointer;
+  }
+}
+
+.shake-slow {
+  animation-name: shake-slow;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.footer-section {
+  background-color: #fed963;
+  position: relative;
+  padding: 60px 0 60px 0;
+  p {
+    font: normal normal bold 16px/21px Sofia Pro Soft;
+    color: #222221;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  .container {
+    max-width: 1500px;
+  }
+}
+
+.face {
+  position: absolute;
+  width: 120px;
+  z-index: 20;
+}
+
+.face-image {
+  width: 120px;
+}
+
+.face:hover {
+  animation: bounce 0.75s linear;
+}
+
+.face-1 {
+  margin-left: auto;
+  margin-right: auto;
+  left: 43rem;
+  right: 0;
+  top: 31rem;
+  text-align: center;
+  .face-image {
+    transform: rotate(348deg);
+  }
+}
+.face-2 {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 60%;
+  text-align: center;
+  top: 150px;
+  .face-image {
+    transform: rotate(15deg);
+  }
+}
+.face-3 {
+  right: -65px;
+  top: -50px;
+  .face-image {
+    transform: rotate(347deg);
+  }
+}
+.face-4 {
+  left: 275px;
+  bottom: 500px;
+  z-index: 0;
+  .face-image {
+    transform: rotate(345deg);
+  }
+}
+.face-5 {
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 80%;
+  text-align: center;
+  top: 120px;
+  .face-image {
+    transform: rotate(15deg);
+  }
+}
+
+.face-6 {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 50%;
+  text-align: center;
+  top: -50px;
+  .face-image {
+    transform: rotate(345deg);
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  right: 55px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #000000;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #ffffff;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #000000;
+  padding: 0.8em 0;
+  font-weight: bold;
+  font-size: 33.5px;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-mint-now-btn {
+  padding-top: 4px;
+  padding-left: 5px;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 220px;
+  height: 60px;
+  background: #fed963 0 0 no-repeat padding-box;
+  border: 2px solid #222221;
+  color: #222221;
+  border-radius: 44px;
+  font: normal normal bold 22px/32px Sofia Pro Soft;
+  letter-spacing: -1.2px;
+  padding-top: 4px;
+  padding-left: 5px;
+}
+
+//.bm-mint-now-btn.shake-slow {
+//  padding-top: 4px;
+//  padding-left: 5px;
+//  font: normal normal bold 22px/32px Sofia Pro Soft;
+//}
+
+.header-icons.shake-slow {
+  padding: 0;
+  display: inline-grid;
+}
+
+.mint-card {
+  background: white;
+
+  @media (max-width: 768px) {
+    padding: 0px !important;
+  }
+}
+
+.mint-box-row {
+  margin: 16px 0;
+}
+
+.mint-amount-content {
+  //price, quanity
+  flex: 1;
+  height: 84px;
+  border-radius: 15px;
+  background: white;
+  border: 2px solid #222221;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font: normal normal bold 30px/40px Sofia Pro Soft;
+  letter-spacing: -1.5px;
+  line-height: 0.9;
+  color: #222221;
+  margin: 0 8px 0 -3px;
+  flex-direction: column;
+  font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.mint-amount-btn {
+  cursor: pointer;
+  height: 84px;
+  width: 84px;
+  border-radius: 15px;
+  background: #d3d3d3;
+  border: 2px solid #222221;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 84px;
+  line-height: 0.7;
+  color: #222221;
+  margin-right: 8px;
+}
+
+.mint-amount-btn-plus {
+  margin-right: -3px;
+}
+
+.mint-popup-button {
+  margin-bottom: 12px;
+  font: normal normal bold 25px/40px Sofia Pro Soft;
+  letter-spacing: -1.5px;
+}
+
+.terms-conditions {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  z-index: 15;
+  color: #222221;
+
+  ul {
+    list-style-type: "-    ";
+  }
+
+  h1 {
+    color: #222221;
+  }
+
+  h2 {
+    color: #222221;
+  }
+}
+
+.back-btn {
+  position: absolute;
+  z-index: 20;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  #header-section {
+    padding: 0;
+  }
+
+  #navbar-mobile {
+    position: absolute;
+    margin-right: 55px;
+    display: flex;
+    z-index: 10;
+    right: 0;
+  }
+
+  #navbar-mobile-menu {
+    height: 30px;
+    z-index: 20;
+  }
+
+  .navbar-pc {
+    display: none;
+  }
+
+  .mindmap-full {
+
+    h1,
+    p {
+      margin: 16px 10px;
+    }
+  }
+
+  #about-us-text-div {
+    width: 100%;
+    margin: auto;
+  }
+
+  #about-us-title {
+    font: normal normal bold 40px/67px Sofia Pro Soft;
+    font-size: 3.6rem;
+    text-align: left;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+
+  #about-us-description {
+    font: normal normal normal 18px/20px Sofia Pro Soft;
+    margin-left: 48px;
+    margin-right: 48px;
+    text-align: left;
+  }
+
+  #header-icons-section {
+    display: none;
+  }
+
+  #header-title {
+    width: 310px;
+    height: 96px;
+    margin-bottom: 15px;
+  }
+
+  #header-description {
+    font-size: 27.5px;
+    line-height: 31px;
+    margin-bottom: 25px;
+  }
+
+  .map-card-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .header-mint-now-btn {
+    width: 255px;
+    height: 76px;
+    border-radius: 44px;
+    font-size: 20px;
+  }
+  #team-title {
+    font: normal normal bold 3.6rem/67px Sofia Pro Soft !important;
+    margin: auto;
+  }
+
+  .team-col {
+    margin-bottom: 20px;
+  }
+  .team {
+    justify-content: center;
+    margin: 0 30px 30px 30px !important;
+  }
+  .cloud-right,
+  .cloud-left {
+    display: none;
+  }
+  .cloud-top-right,
+  .cloud-top-left {
+    width: 200px;
+  }
+
+  #about-us-cloud {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
+  .face {
+    display: none;
+  }
+
+  .footer-section {
+    .copyright {
+      text-align: center;
+    }
+    .policies {
+      text-align: center !important;
+    }
+  }
+
+  .mint-amount-content {
+    flex: 100%;
+  }
+  .mint-amount-btn {
+    width: calc(50% - 7.5px);
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bm-burger-button {
+    display: none;
+  }
+
+  #about-us-title {
+    font: normal normal bold 60px/77px Sofia Pro Soft;
+  }
+
+  #about-us-description {
+    font: normal normal normal 20px/27px Sofia Pro Soft;
+  }
+
+  #header-icons-section {
+    position: fixed;
+    z-index: 30;
+    right: 5px;
+    top: 0;
+    width: 55px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #header-title {
+    width: 358px;
+    height: 105px;
+    margin-bottom: 7px;
+  }
+
+  #header-description {
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 25px;
+  }
+
+  .header-mint-now-btn {
+    width: 200px;
+    height: 55px;
+    border-radius: 44px;
+    font-size: 20px;
+  }
+  .tyler,
+  .sam,
+  .jack,
+  .josh {
+    font-size: 75% !important;
+  }
+  .team-col {
+    margin-bottom: 20px;
+  }
+  .cloud-top-right,
+  .cloud-top-left {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #about-us-title {
+    font: normal normal bold 72px/97px Sofia Pro Soft;
+  }
+
+  #about-us-description {
+    font: normal normal normal 24px/31px Sofia Pro Soft;
+  }
+
+  #header-title {
+    margin-bottom: 15px;
+    width: 506px;
+    height: 156px;
+  }
+
+  #header-description {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 35px;
+  }
+
+  .header-mint-now-btn {
+    width: 250px;
+    height: 65px;
+    border-radius: 44px;
+    font-size: 20px;
+  }
+  .smaller {
+    width: 200px;
+  }
+  .tyler,
+  .sam,
+  .jack,
+  .josh {
+    font: normal normal bold 18px/24px Sofia Pro Soft !important;
+  }
+  .cloud-top-right,
+  .cloud-top-left {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 965px;
+  }
+
+  #about-us-title {
+    font: normal normal bold 72px/97px Sofia Pro Soft;
+  }
+
+  #about-us-description {
+    font: normal normal normal 24px/31px Sofia Pro Soft;
+  }
+}
+
+@import "animations.scss";

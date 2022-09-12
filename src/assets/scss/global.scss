@@ -1,0 +1,95 @@
+ // Global settings
+
+$enable-caret:              true !default;
+$enable-rounded:            true !default;
+$enable-shadows:            true !default;
+$enable-gradients:          false !default;
+$enable-transitions:        true !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+@import "functions";
+@import "~bootstrap/scss/functions";
+@import "variables";
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+
+$primary-color: #90C3FA;
+$secondary-color: #FED963;
+
+@font-face {
+  font-family:"Sofia Pro Soft";
+  src: url("../fonts/SofiaProSoftRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family:"Sofia Pro Soft";
+  src: url("../fonts/SofiaProSoftBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+html, body {
+  background: $primary-color !important;
+  font-family: "Sofia Pro Soft", serif;
+}
+
+a {
+  color: #222221;
+}
+
+a:hover {
+  color: #222221;
+}
+
+.primary-bg {
+  background: $primary-color;
+}
+
+.secondary-bg {
+  background: $secondary-color;
+}
+
+.card {
+  padding: 20px 20px;
+  border-radius: 32px;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
