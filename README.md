@@ -31,6 +31,7 @@ Since this was a private project, collaborators are not listed in the commit his
 - Kassem El-Zoghbi ([@NvmKassem](https://github.com/NvmKassem))
 - Korode Ogunfowote ([@Korodee](https://github.com/Korodee))
 - Sylwia Makuch ([@SylviaMakuch](https://github.com/SylviaMakuch))
+- Anis Brachemi ([@anisdzdev](https://github.com/anisdzdev))
 
 
 ## Contributing
